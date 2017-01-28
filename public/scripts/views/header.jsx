@@ -4,7 +4,7 @@ var React = require('react');
 var Header = React.createClass({
   render: function(){
     return (
-      <h1>ヘッダです</h1>
+      <h1>ユーザー登録</h1>
     );
   }
 });

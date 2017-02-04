@@ -34,14 +34,12 @@ submitHandler: function (event) {
       　<label htmelFor="u_email">メールアドレス：</label>
           </td>
           <td>
-            //メールアドレスのtextフォーム
             <input
               type="text"
               name="u_email"
               className="temail"
               value={this.state.u_email}
               onChange={this.handleChange} />
-
           </td>
         </tr>
         <tr>
@@ -49,7 +47,6 @@ submitHandler: function (event) {
       　<label htmelFor="u_pass">パスワード：</label>
           </td>
           <td>
-            //パスワードのフォーム
             <input
               type="password"
               name="u_pass"
@@ -64,7 +61,6 @@ submitHandler: function (event) {
       <br />（不明な場合は空欄で構いません）
           </td>
           <td>
-            //コミュニティーコードのフォーム
             <input
               type="password"
               name="c_code"

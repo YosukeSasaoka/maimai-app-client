@@ -14,9 +14,53 @@ export default class UserNameForm extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit.bind(this)}>
-        ユーザー名
-        <input type="text" placeholder="Input new name" ref="name" />
-        <input type="submit" value="更新" />
+        <br />
+        <table className="formT">
+          <tr>
+            <td>
+        　<label htmelFor="u_email">メールアドレス：</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                name="u_email"
+                className="temail"
+                value={this.state.u_email}
+                onChange={this.handleChange} />
+            </td>
+          </tr>
+          <tr>
+            <td>
+        　<label htmelFor="u_pass">パスワード：</label>
+            </td>
+            <td>
+              <input
+                type="password"
+                name="u_pass"
+                className="passw"
+                value={this.state.u_pass}
+                onChange={this.handleChange} />
+            </td>
+          </tr>
+          <tr>
+            <td>
+        　<label htmelFor="c_code">コミュニティーコード：</label>
+        <br />（不明な場合は空欄で構いません）
+            </td>
+            <td>
+              <input
+                type="password"
+                name="c_code"
+                className="passw"
+                value={this.state.c_code}
+                onChange={this.handleChange} />
+            </td>
+          </tr>
+
+        <br />
+        </table>
+        <button type="submit" value="">登録</button>
+
       </form>
     )
   }
